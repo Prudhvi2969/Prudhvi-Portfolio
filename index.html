@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaparla Prudhvi Harshith</title>
+  <meta name="description"
+    content="Portfolio of Chaparla Prudhvi Harshith – Data Scientist and Software Developer passionate about transforming data into actionable insights." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- Anti-FOUC: apply saved theme before first paint -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('portfolio-theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">CPH<span class="dot"></span></a>
+      <div class="nav-actions">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#training" class="nav-link">Training</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-theme-li">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+            <!-- Moon icon (shown in dark mode) -->
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <!-- Sun icon (shown in light mode) -->
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-image-wrap">
+        <div class="hero-ring ring1"></div>
+        <div class="hero-ring ring2"></div>
+        <img src="assets/hero.png" alt="Chaparla Prudhvi Harshith – Professional Photo" class="hero-photo" />
+      </div>
+      <div class="hero-content">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">Chaparla Prudhvi<br><span class="gradient-text">Harshith</span></h1>
+        <div class="hero-titles">
+          <span class="title-chip chip-primary" id="typed-title" aria-label="Data Analyst"></span>
+        </div>
+        <p class="hero-tagline">Transforming complex data into <span class="highlight">strategic insights</span> and
+          intelligent solutions. With a strong foundation in machine learning and scalable software development, I build
+          systems that drive meaningful decisions. Let's engineer the future together.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          <a href="assets/Resume.pdf" download="Chaparla_Prudhvi_Harshith_Resume.pdf" class="btn btn-download">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download CV
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/prudhviharshith17/" target="_blank" rel="noopener" class="social-icon"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="https://github.com/Prudhvi2969" target="_blank" rel="noopener" class="social-icon"
+            aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-intro">From numbers to narratives — I'm Prudhvi, a data enthusiast who believes the best
+            insights hide in plain sight within the data.</p>
+          <p>Currently pursuing my <strong>B.Tech in Computer Science & Engineering</strong> at Lovely Professional
+            University, Punjab, I'm on a mission to bridge the gap between raw data and smart decision-making. Whether
+            it's crafting a Power BI dashboard that instantly reveals billing patterns, or writing a Python script that
+            uncovers infrastructure trends across Indian states — I love the moment when data "speaks."</p>
+          <p>Beyond technical skills, I bring <strong>critical thinking, relentless curiosity, and a knack for learning
+              fast</strong> to every challenge. I'm equally comfortable diving into code as I am presenting insights to
+            a non-technical audience.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem;display:inline-block;">Let's Connect</a>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <div class="stat-icon">🎓</div>
+            <div class="stat-value">7.65</div>
+            <div class="stat-label">Current CGPA</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">💡</div>
+            <div class="stat-value">3+</div>
+            <div class="stat-label">Data Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📜</div>
+            <div class="stat-value">4+</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-value">Top 10</div>
+            <div class="stat-label">Hack-IoT Finalist</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Academic Journey</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-badge">Current</div>
+            <div class="edu-icon">🏛️</div>
+            <h3 class="edu-institution">Lovely Professional University</h3>
+            <p class="edu-location">📍 Punjab, India</p>
+            <p class="edu-degree">B.Tech – Computer Science & Engineering</p>
+            <div class="edu-meta">
+              <span class="edu-date">Aug 2023 – Present</span>
+              <span class="edu-grade">CGPA: 7.65</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="edu-icon">📚</div>
+            <h3 class="edu-institution">Tirumala Junior College</h3>
+            <p class="edu-location">📍 Andhra Pradesh, India</p>
+            <p class="edu-degree">Intermediate (Science / MPC)</p>
+            <div class="edu-meta">
+              <span class="edu-date">Apr 2021 – Mar 2023</span>
+              <span class="edu-grade">79.2%</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="edu-icon">🏫</div>
+            <h3 class="edu-institution">Tirumala EM High School</h3>
+            <p class="edu-location">📍 Andhra Pradesh, India</p>
+            <p class="edu-degree">Secondary School Certificate (SSC / Class X)</p>
+            <div class="edu-meta">
+              <span class="edu-date">Apr 2020 – Mar 2021</span>
+              <span class="edu-grade">10.0 GPA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">💻</div>
+          <h3 class="skill-cat-title">Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tag-primary">Python</span>
+            <span class="skill-tag tag-primary">JavaScript</span>
+            <span class="skill-tag tag-primary">C++</span>
+            <span class="skill-tag tag-primary">C</span>
+            <span class="skill-tag tag-primary">Java</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">📊</div>
+          <h3 class="skill-cat-title">Data Libraries</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tag-cyan">NumPy</span>
+            <span class="skill-tag tag-cyan">Pandas</span>
+            <span class="skill-tag tag-cyan">Matplotlib</span>
+            <span class="skill-tag tag-cyan">Seaborn</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">🛠️</div>
+          <h3 class="skill-cat-title">Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tag-violet">Power BI</span>
+            <span class="skill-tag tag-violet">Tableau</span>
+            <span class="skill-tag tag-violet">Excel</span>
+            <span class="skill-tag tag-violet">GitHub</span>
+            <span class="skill-tag tag-violet">Jupyter</span>
+            <span class="skill-tag tag-violet">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">🌐</div>
+          <h3 class="skill-cat-title">Web & Frameworks</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tag-green">HTML5</span>
+            <span class="skill-tag tag-green">CSS3</span>
+            <span class="skill-tag tag-green">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">🧠</div>
+          <h3 class="skill-cat-title">Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tag-amber">Critical Thinking</span>
+            <span class="skill-tag tag-amber">Time Management</span>
+            <span class="skill-tag tag-amber">Quick Learning</span>
+            <span class="skill-tag tag-amber">Communication</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">🤖</div>
+          <h3 class="skill-cat-title">AI & Automation</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tag-rose">Machine Learning</span>
+            <span class="skill-tag tag-rose">RPA</span>
+            <span class="skill-tag tag-rose">Prompt Engineering</span>
+            <span class="skill-tag tag-rose">Data Modeling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/project1.png" alt="TG Electricity Consumption Power BI Dashboard" class="project-img" />
+            <div class="project-overlay">
+              <a href="https://github.com/Prudhvi2969/TG-Electricity-Consumption-Billing-Dashboard-SPDCL"
+                target="_blank" rel="noopener" class="project-link-btn">View on
+                GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <span class="project-date">Dec 2025</span>
+              <span class="project-tag">Power BI</span>
+            </div>
+            <h3 class="project-title">TG Electricity Consumption & Billing Dashboard</h3>
+            <p class="project-desc">Built an interactive Power BI dashboard for Telangana SPDCL analyzing electricity
+              billing and revenue data. Developed KPI visuals and charts to monitor revenue performance and transformed
+              data models for accurate insights.</p>
+            <div class="project-techs">
+              <span class="tech-badge">Power BI</span>
+              <span class="tech-badge">Data Visualization</span>
+              <span class="tech-badge">Data Modeling</span>
+              <span class="tech-badge">DAX</span>
+            </div>
+            <a href="https://github.com/Prudhvi2969/TG-Electricity-Consumption-Billing-Dashboard-SPDCL" target="_blank"
+              rel="noopener" class="project-github-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub Repository
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/project2.png" alt="Physical Financial Progress of PMGSY Data Analysis"
+              class="project-img" />
+            <div class="project-overlay">
+              <a href="https://github.com/Prudhvi2969/Physical-Financial-Progress-of-Pradhan-Mantri-Gram-Sadak-Yojna-PMGSY-as-on-date"
+                target="_blank" rel="noopener" class="project-link-btn">View on
+                GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <span class="project-date">Apr 2025</span>
+              <span class="project-tag">Python</span>
+            </div>
+            <h3 class="project-title">Physical-Financial Progress of PMGSY</h3>
+            <p class="project-desc">Conducted comprehensive data analysis on rural road development under Pradhan Mantri
+              Gram Sadak Yojana. Performed preprocessing, exploratory analysis, and visualization to uncover state-wise
+              trends in project progress and funding allocation.</p>
+            <div class="project-techs">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">NumPy</span>
+              <span class="tech-badge">Matplotlib</span>
+            </div>
+            <a href="https://github.com/Prudhvi2969/Physical-Financial-Progress-of-Pradhan-Mantri-Gram-Sadak-Yojna-PMGSY-as-on-date"
+              target="_blank" rel="noopener" class="project-github-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub Repository
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/project3.png" alt="State Infrastructure Dashboard" class="project-img" />
+            <div class="project-overlay">
+              <a href="https://github.com/Prudhvi2969/Excel-Project" target="_blank" rel="noopener"
+                class="project-link-btn">View on
+                GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <span class="project-date">Apr 2025</span>
+              <span class="project-tag">Excel</span>
+            </div>
+            <h3 class="project-title">State Infrastructure Dashboard</h3>
+            <p class="project-desc">Created an interactive dashboard to track road and bridge project progress across
+              Indian states. Analyzed metrics like sanctioned vs. completed work, costs, and remaining budgets,
+              processing project length and expenditure data to generate actionable insights.</p>
+            <div class="project-techs">
+              <span class="tech-badge">Excel</span>
+              <span class="tech-badge">Data Visualization</span>
+              <span class="tech-badge">Data Analysis</span>
+            </div>
+            <a href="https://github.com/Prudhvi2969/Excel-Project" target="_blank" rel="noopener"
+              class="project-github-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              GitHub Repository
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAINING ===== -->
+  <section id="training" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Extra Learning</span>
+        <h2 class="section-title">Training</h2>
+      </div>
+      <div class="training-card reveal">
+        <div class="training-img-wrap">
+          <img src="assets/training.png" alt="Data Science Training" class="training-img" />
+        </div>
+        <div class="training-body">
+          <div class="training-meta">
+            <span class="training-date">July 2025</span>
+            <span class="training-chip">Practical Course</span>
+          </div>
+          <h3 class="training-title">From Data to Insights: A Hands-On Approach to Data Science</h3>
+          <p class="training-desc">A comprehensive, project-based data science program focused on real-world
+            applications. Gained hands-on experience in data analysis, visualization, and storytelling. Key achievements
+            include:</p>
+          <ul class="training-highlights">
+            <li>🤖 Built a <strong>machine learning model to predict employee churn</strong> achieving a strong ROC–AUC
+              score, demonstrating proficiency in model development and evaluation.</li>
+            <li>📊 Created <strong>interactive Power BI dashboards</strong> for HR metrics, enabling data-driven
+              decision making at scale.</li>
+            <li>📉 Applied data preprocessing, feature engineering, and visualization techniques to derive meaningful
+              business insights.</li>
+          </ul>
+          <div class="training-techs">
+            <span class="tech-badge">Tableau</span>
+            <span class="tech-badge">Power BI</span>
+            <span class="tech-badge">Excel</span>
+            <span class="tech-badge">Machine Learning</span>
+            <span class="tech-badge">Data Visualization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES ===== -->
+  <section id="certificates" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Verified Learning</span>
+        <h2 class="section-title">My <span class="gradient-text">Certificates</span></h2>
+      </div>
+      <div class="carousel-wrap reveal">
+        <div class="carousel" id="carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide">
+              <div class="cert-card">
+                <img src="assets/cert1.jpg" alt="Robotic Process Automation Certificate – Automation Anywhere"
+                  class="cert-img" />
+                <div class="cert-info">
+                  <h4 class="cert-name">Robotic Process Automation</h4>
+                  <p class="cert-issuer">Automation Anywhere</p>
+                  <span class="cert-date">Oct 2025</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="cert-card">
+                <img src="assets/cert2.jpg" alt="ChatGPT-4 Prompt Engineering Certificate" class="cert-img" />
+                <div class="cert-info">
+                  <h4 class="cert-name">ChatGPT-4 Prompt Engineering</h4>
+                  <p class="cert-issuer">Generative AI & LLM</p>
+                  <span class="cert-date">Aug 2025</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="cert-card">
+                <img src="assets/cert3.jpg" alt="Computational Theory Languages and Automata Certificate"
+                  class="cert-img" />
+                <div class="cert-info">
+                  <h4 class="cert-name">Computational Theory: Languages & Automata</h4>
+                  <p class="cert-issuer">Online Certification</p>
+                  <span class="cert-date">Jul 2025</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="cert-card">
+                <img src="assets/cert4.jpg" alt="Data Structures and Algorithms Certificate – Board Infinity"
+                  class="cert-img" />
+                <div class="cert-info">
+                  <h4 class="cert-name">Data Structures & Algorithms</h4>
+                  <p class="cert-issuer">Board Infinity</p>
+                  <span class="cert-date">Feb 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous certificate">&#8249;</button>
+        <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next certificate">&#8250;</button>
+        <div class="carousel-dots" id="carouselDots">
+          <button class="dot active" data-index="0" aria-label="Certificate 1"></button>
+          <button class="dot" data-index="1" aria-label="Certificate 2"></button>
+          <button class="dot" data-index="2" aria-label="Certificate 3"></button>
+          <button class="dot" data-index="3" aria-label="Certificate 4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Proud Moments</span>
+        <h2 class="section-title">My <span class="gradient-text">Achievements</span></h2>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🏆</div>
+          <div class="achievement-body">
+            <div class="achievement-date">Mar 2023</div>
+            <h3 class="achievement-title">Hack-IoT Hackathon – Top 10 Finalist</h3>
+            <p class="achievement-desc">Competed in a national-level IoT-focused hackathon, reaching the Top 10 among
+              hundreds of participating teams. Designed and presented an innovative IoT solution that impressed judges
+              with its technical depth and practical application.</p>
+          </div>
+        </div>
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🌱</div>
+          <div class="achievement-body">
+            <div class="achievement-date">Jul 2024</div>
+            <h3 class="achievement-title">Community Development Project</h3>
+            <p class="achievement-desc">Completed a 35-hour community service project, contributing meaningfully to
+              societal development. This experience reinforced values of empathy, teamwork, and civic responsibility
+              alongside technical pursuits.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3 class="contact-info-title">Connect With Me</h3>
+          <div class="contact-links">
+            <a href="tel:+916302787199" class="contact-link">
+              <div class="contact-link-icon phone-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-value">+91 6302787199</span>
+              </div>
+            </a>
+            <a href="mailto:prudhvichaparla@gmail.com" class="contact-link">
+              <div class="contact-link-icon email-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">prudhvichaparla@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/prudhviharshith17/" target="_blank" rel="noopener"
+              class="contact-link">
+              <div class="contact-link-icon linkedin-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/prudhviharshith17/</span>
+              </div>
+            </a>
+            <a href="https://github.com/Prudhvi2969" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link-icon github-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+              </div>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/Prudhvi2969</span>
+              </div>
+            </a>
+          </div>
+          <div class="contact-availability">
+            <div class="availability-dot"></div>
+            <span>Available for internships & collaborations</span>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required />
+              <span class="form-error" id="nameError">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required />
+              <span class="form-error" id="emailError">Please enter a valid email address.</span>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea"
+                placeholder="Tell me about your project or just say hi..." rows="5" required></textarea>
+              <span class="form-error" id="messageError">Please enter your message.</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon">✉️</span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <span>🎉 Message sent! I'll get back to you soon.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">CPH<span class="dot"></span></a>
+        <p class="footer-copy">© 2026 Chaparla Prudhvi Harshith. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/prudhviharshith17" target="_blank" rel="noopener" aria-label="LinkedIn"
+            class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="https://github.com/Prudhvi2969" target="_blank" rel="noopener" aria-label="GitHub"
+            class="footer-social">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
